@@ -10,4 +10,4 @@
 	* [3.5 运算子](Char3.5.md)
 	* [3.6 字符串](Char3.6.md)
 	* [3.7 输入和输出](Char3.7.md)
-	* [3.8 Arrays](Char3.7.md)
+	* [3.8 Arrays](Char3.8.md)
