@@ -1,1 +1,0 @@
-Test whether new computer can push files to remote side.
