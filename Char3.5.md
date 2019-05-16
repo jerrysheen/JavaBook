@@ -39,4 +39,5 @@ Math.E
 3. Math计算的时候，用了许多的方法来保证计算的安全，如果计算结果超出数据类型的长度，就会报出异常。 
 
 ## 3.53 数字类型之间的转换。
-<img src="/img/char3.53.PNG">`
+
+![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/char3.53.png)
