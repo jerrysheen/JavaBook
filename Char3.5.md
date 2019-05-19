@@ -39,8 +39,10 @@ Math.E
 3. Math计算的时候，用了许多的方法来保证计算的安全，如果计算结果超出数据类型的长度，就会报出异常。 
 
 ## 3.53 数字类型之间的转换。
+  
 
-![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/char3.53.png)  
+![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/Char3/char3.53.png)  
+  
 1. 这里，六个黑色箭头表示不会产生精度损失的，而红色箭头是可能会产生精度损失的，因为整形和长整形长度可能会比```float```长，所以就会造成精度损失。
 2. 如果两个数值是不同的类型，进行计算之前会转换成相同的类型，其遵循如下原则：
 	- IF 其中一个是double，那么最后都会变成double

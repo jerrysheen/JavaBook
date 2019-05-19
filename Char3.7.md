@@ -68,6 +68,21 @@ System.out.printf("I am %s ,and I am %d years old",name ,age);
 |<|还不是很懂| | 
 
 此外，还有和日期有关的输出型，这里不做过多的学习了，虽然有两页。  
-
-- **注意！！！**：所有的这些符号的输出是有顺序的，下面是整个输出的顺序，顺序不对是会报错的，按照错误提示其实也可以改正：  
+  
 ![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/Char3/char3.73.png)  
+- **注意！！！**：所有的这些符号的输出是有顺序的，下面是整个输出的顺序，顺序不对是会报错的，按照错误提示其实也可以改正：    
+
+### 文件的输入和输出 
+这里读取一个文件的操作，我没有按照书中的来，因为貌似在我这个JDK9中，实现方式不太一样。
+```Java
+File file = new File("C:\\....\\test.txt");
+String encoding = "utf-8";
+Scanner in = new Scanner(file,String.valueOf(StandardCharsets.UTF_8));  //or encoding
+System.out.println(in.next());
+``` 
+1. 这样可以读取txt中的一行。
+2. 后面一个参数是以什么编码方式读取文件，你可以自己写一个string，也可以找StandardCharsets里面的，但是要注意转换。
+3. File的地址需要是绝对路径，并且要用双反斜杠来区隔。
+输出的部分等之后整理了再来完成。
+
+
