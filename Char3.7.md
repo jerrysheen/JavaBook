@@ -69,4 +69,5 @@ System.out.printf("I am %s ,and I am %d years old",name ,age);
 
 此外，还有和日期有关的输出型，这里不做过多的学习了，虽然有两页。  
 
-- **注意！！！**：所有的这些符号的输出是有顺序的，下面是整个输出的顺序，顺序不对是会报错的，按照错误提示其实也可以改正：
+- **注意！！！**：所有的这些符号的输出是有顺序的，下面是整个输出的顺序，顺序不对是会报错的，按照错误提示其实也可以改正：  
+![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/Char3/char3.73.png)  
