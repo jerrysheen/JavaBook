@@ -287,7 +287,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="36-&#x5B57;&#x4E32;strings">3.6 &#x5B57;&#x4E32;Strings</h1>
+<p>Java&#x6CA1;&#x6709;&#x5185;&#x5EFA;&#x7684;string&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x662F;&#x5728;Java&#x7684;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x52A0;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x5148;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;String&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x4E32;&#xFF0C;&#x90FD;&#x662F;&#x8FD9;&#x4E2A;String&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Java">String e =<span class="hljs-string">&quot;&quot;</span>; <span class="hljs-comment">// an empty string</span>
+String greeting = <span class="hljs-string">&quot;Hello&quot;</span>;
+</code></pre>
+<h2 id="361-substrings">3.61 Substrings:</h2>
+<p>&#x901A;&#x8FC7;<code>substring</code>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4ECE;&#x4E00;&#x4E2A;String&#x4E2D;&#x62BD;&#x53D6;&#x51FA;&#x4E00;&#x4E2A;&#x5B50;&#x5B57;&#x4E32;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-Java">String e = <span class="hljs-string">&quot;Hello&quot;</span>;
+String s = s.substring(<span class="hljs-number">0</span>,<span class="hljs-number">3</span>)  <span class="hljs-comment">// s = &quot;Hel&quot;</span>
+</code></pre>
+<ol>
+<li>&#x8FD9;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F00;&#x59CB;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x51CF;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002; </li>
+</ol>
+<h2 id="362-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FDE;&#x63A5;concatenation&#xFF1A;">3.62 &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FDE;&#x63A5;Concatenation&#xFF1A;</h2>
+<ol>
+<li>Java&#x53EF;&#x4EE5;&#x7528;<code>+</code>&#x6765;&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>&#x5F53;&#x4F60;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x4E00;&#x4E2A;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x53D8;&#x91CF;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6574;&#x4E2A;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x53D8;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-Java"><span class="hljs-keyword">int</span> age = <span class="hljs-number">13</span>;
+String tomAge = <span class="hljs-string">&quot;Tom&quot;</span>+age   <span class="hljs-comment">//tomAge = &quot;Tom13&quot;</span>
+</code></pre>
+&#x5728;java&#x4E2D;&#xFF0C;&#x4F60;&#x60F3;&#x5C06;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5E76;&#x4E14;&#x4E2D;&#x95F4;&#x7528;&#x7B26;&#x53F7;&#x533A;&#x522B;&#x5F00;&#xFF0C;&#x4F60;&#x4F1A;&#x7528;&#x5230;join&#x65B9;&#x6CD5;&#xFF1A;<pre><code class="lang-Java">String all = String.join(<span class="hljs-string">&quot;/&quot;</span>,<span class="hljs-string">&quot;S&quot;</span>,<span class="hljs-string">&quot;M&quot;</span>,<span class="hljs-string">&quot;L&quot;</span>,<span class="hljs-string">&quot;XL&quot;</span>);
+<span class="hljs-comment">// all is the String &quot;S/M/L/XL&quot;</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="363-&#x5B57;&#x4E32;&#x7684;&#x4E0D;&#x53EF;&#x53D8;&#x6027;&#xFF08;&#xFF01;&#xFF01;&#x91CD;&#x8981;&#xFF09;string-are-immutable">3.63 &#x5B57;&#x4E32;&#x7684;&#x4E0D;&#x53EF;&#x53D8;&#x6027;&#xFF08;&#xFF01;&#xFF01;&#x91CD;&#x8981;&#xFF09;String Are Immutable</h2>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#x7684;&#x5B57;&#x4E32;&#xFF0C;String&#x7C7B;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x65B9;&#x6CD5;&#x6765;&#x8BA9;&#x4F60;&#x6539;&#x53D8;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x6539;&#x53D8;&#x67D0;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53D8;&#x91CF;a&#x7684;&#x503C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li>&#x901A;&#x8FC7;concatenation&#x548C;substring&#x4E24;&#x4E2A;&#x6765;&#x8FDB;&#x884C;&#x5220;&#x51CF;&#x548C;&#x589E;&#x52A0;&#x8FBE;&#x5230;change&#x7684;&#x76EE;&#x7684;&#x3002;</li>
+<li>&#x76F4;&#x63A5;&#x5C06;a&#x6307;&#x5411;&#x522B;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7B49;&#x4E8E;&#x76F4;&#x63A5;&#x66F4;&#x6539;a&#x6307;&#x5411;&#x7684;&#x5730;&#x5740;&#x3002;</li>
+</ol>
+<h2 id="365-&#x7A7A;&#x5B57;&#x4E32;&#x548C;null">3.65 &#x7A7A;&#x5B57;&#x4E32;&#x548C;Null</h2>
+<p>&#x7A7A;&#x5B57;&#x4E32;<code>&quot;&quot;</code>&#x7684;&#x957F;&#x5EA6;&#x4E3A;0&#xFF0C;&#x7A7A;&#x5B57;&#x4E32;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x7740;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#xFF08;0&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#x7684;Java&#x5BF9;&#x8C61;&#x3002;String&#x5BF9;&#x8C61;&#x8FD8;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x503C;&#xFF0C;&#x53EB;&#x505A;<code>null</code>&#xFF0C;&#x8FD9;&#x8868;&#x793A;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6307;&#x5411;&#x73B0;&#x5728;&#x7684;&#x53D8;&#x6570;&#x3002;&#x5728;Java&#x4E2D;&#xFF0C;&#x5728;&#x4F60;&#x6D4B;&#x8BD5;&#x662F;&#x4E0D;&#x662F;&#x7A7A;&#x5B57;&#x4E32;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x7684;&#x7A0B;&#x5F0F;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-Java"><span class="hljs-keyword">if</span> (str != <span class="hljs-keyword">null</span> &amp;&amp; str.length() != <span class="hljs-number">0</span>)
+</code></pre>
+<ol>
+<li>&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x987A;&#x5E8F;&#x4E0D;&#x53EF;&#x4EE5;&#x6362;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x6D4B;&#x8BD5;&#x8FD9;&#x4E2A;string&#x662F;&#x4E0D;&#x662F;null&#x7684;&#xFF0C;&#x56E0;&#x4E3A;null.lenghth()&#x4F1A;&#x62A5;&#x9519;&#x3002;</li>
+</ol>
+<h2 id="369-stringbuilder">3.69 StringBuilder</h2>
+<p>&#x9664;&#x4E86;concatenation&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;Java&#x8FD8;&#x6709;append&#x65B9;&#x6CD5;&#x6765;&#x5408;&#x5E76;&#x4E24;&#x4E2A;&#x5B57;&#x4E32;&#x3002;
+&#x5728;&#x5C06;&#x591A;&#x4E2A;string&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;concatenation&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x76F8;&#x52A0;&#x5C31;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;String&#xFF0C;&#x975E;&#x5E38;&#x7684;&#x9EBB;&#x70E6;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;Java&#x7528;stringbuilder&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5229;&#x7528;<code>builder.appened()</code>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x4E0D;&#x4F1A;&#x6BCF;&#x6B21;&#x62FC;&#x63A5;&#x90FD;&#x4EA7;&#x751F;&#x65B0;&#x7684;string&#xFF0C;&#x800C;&#x662F;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x7F13;&#x5B58;&#x533A;&#x91CC;&#x9762;&#x3002;</p>
+<pre><code class="lang-Java">String str = builder.toString();
+</code></pre>
+<ol>
+<li>&#x5F53;&#x4F60;&#x786E;&#x5B9A;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#x62FC;&#x63A5;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x53D8;&#x56DE;string&#xFF1A;</li>
+</ol>
+
                                 
                                 </section>
                             
@@ -330,7 +375,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.6 字符串","level":"1.3.6","depth":2,"next":{"title":"3.7 输入和输出","level":"1.3.7","depth":2,"path":"Char3.7.md","ref":"Char3.7.md","articles":[]},"previous":{"title":"3.5 运算子","level":"1.3.5","depth":2,"path":"Char3.5.md","ref":"Char3.5.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","livereload"],"pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Char3.6.md","mtime":"2019-05-14T18:22:01.020Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-16T08:13:04.281Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.6 字符串","level":"1.3.6","depth":2,"next":{"title":"3.7 输入和输出","level":"1.3.7","depth":2,"path":"Char3.7.md","ref":"Char3.7.md","articles":[]},"previous":{"title":"3.5 运算子","level":"1.3.5","depth":2,"path":"Char3.5.md","ref":"Char3.5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","livereload"],"pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Char3.6.md","mtime":"2019-05-18T15:51:40.351Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-19T08:10:11.498Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

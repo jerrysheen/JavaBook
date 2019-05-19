@@ -40,4 +40,65 @@ Math.E
 
 ## 3.53 数字类型之间的转换。
 
-![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/char3.53.png)
+![](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/char3.53.png)  
+1. 这里，六个黑色箭头表示不会产生精度损失的，而红色箭头是可能会产生精度损失的，因为整形和长整形长度可能会比```float```长，所以就会造成精度损失。
+2. 如果两个数值是不同的类型，进行计算之前会转换成相同的类型，其遵循如下原则：
+	- IF 其中一个是double，那么最后都会变成double
+	- elseif 其中有个float，那么最后会变成float
+	- elseif 其中有一个long，那么最后都会变成long
+	- elseif 两个都会变成int  
+
+## 3.54 转换（Casts）  
+在上面的步骤里面，讲到的都是自动转型，那有的时候，遇到double和int，我们如果想要结果是int类型的，那我们要利用**cast**这个方法进行类型转换，例如：
+
+```java
+double x = 9.997;
+int nx = (int) x;   //nx = 9;
+```
+
+- 这种方法显而易见会造成精度损失，如果你想要找到离最近的整数，那么就需要round方法。
+
+```java
+double x = 9.997;
+int nx = (int) Math.round(x);
+```  
+
+- 在这里```Math.round()```会回传一个**long**类型的，所以就需要cast进行转型。
+
+## 3.55 赋值和计算的混合写法:
+
+在使用二元计算的时候，对于计算加上赋值这两个步骤有更简单的写法，像是:
+```x += 4;  //等于x = x+4;```,注意，如果左右类型不相同，会强制转换到**x**的那个类型去。
+
+## 3.56 增，减运算子
+
+在许多的编程语言中，将数值变量增加或者减少1最常用的方法就是**n++;**，但是在Java中，需要注意的是```n++```和```++n```在表达式（expression）是不同的，其中，前者表示做完离自己最近的操作后，自己再加一，后者表示立刻马上加一，然后再做离自己最近的运算。
+```java
+int n = 0;
+int x = (2*n++)+n;   // x = 1
+int x = (2*++n)+n;   // x = 3
+```
+
+1. **注意：**这简单的写法只作为认识就好，在编程的过程中因为会造成混肴，不推荐使用。
+
+## 3.57 关系（relationnal）和布尔运算子
+
+Java中的关系比较子有最基本的这些：
+
+```Java
+3 == 7 //false
+3 != 7 //false
+// '<' , '<=' , '>' , '>='
+```  
+1. 除了这些，Java还有逻辑运算符**&&**（and）和**||**（or），用来同时解决多个判断同时考虑时候的布尔值。
+2. **注意**：一个非常重要的是，在如下代码中```expression1 && expression2```，如果expression1是**错误**的，则**不会去进行**expression2的运算！像是如果你在expression2中想要巧妙地通过计算改变某些值，就做不到了。
+3. **注意**：(同理)，在如下代码中```expression1 || expression2```，如果expression1是**正确**的，则**不会去进行**expression2的运算！
+
+### 三元运算符 ？:（ternary operator）
+三元运算符的基本格式是这样子的```condition ? expression1 : expression2```，进行condition判断，当condition为true的时候，整个式子的值是expression1，否则就为expression2。像是 ```x<y ? x : y```就是在计算x和y中较小的那个。
+
+## 3.58 位元运算符（Bitwise）
+对于四种整数类型的变量，你可以进行位元操作，他们分别是:
+```&(and), |(or), ^(xor), ~(not)```。详细的可以进行的操作这里不多说了，像是可以判断将整数变成二进制后，某个位置是1还是0。
+另外也有```>>````和```<<```这两个进行左移和右移的操作符。  
+
