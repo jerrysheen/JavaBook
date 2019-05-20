@@ -56,4 +56,7 @@ if(Double.isNaN(x)); // check whether x is "not a number"
 2. 一开始的时候，unicode是以16-bit（4Hex）来保存一个字符的，但是随着中文，日文以及韩文的加入，2^16个字已经不能满足unicode了。JAVA利用以下方法来解决该问题：
 	- 首先，每个字符都会有一个自己的Code point，就像自己的身份证一样，其范围为（U+0000 to U+10FFFF），其中（U+0000 to U+FFFF）为**基本字符**，而后的为**补充字符**（U+10000 to U+10FFFF）。有了身份证之后，每个人都有自己的住所，JAVA 提供了17个code planes，这些planes对应到了之前的所有身份证，像是第一个plane（basic multilingual plane）对应的就是基本字符，这些字符也被叫做**code unit**。而后的16个planes对应的就是补充字符。
 	- 有了这些定义之后，我们要如何来表示那些补充字符呢？后面的字符就用两个code unit来组成。前一个code unit的范围在（0xD800和0xDBFF）之间，后一个code unit的范围在（0xDC00和0xDFFF）之间。这两个区域被叫做**surrogates area**。
-	- 更加详细具体的解释可以[详见](https://tools.ietf.org/html/rfc2781)，作者提到最好不要使用char类型，而是使用String类型会比较好。
+	- 更加详细具体的解释可以[详见](https://tools.ietf.org/html/rfc2781)，作者提到最好不要使用char类型，而是使用String类型会比较好。  
+
+## The Boolean Type：
+1. 布尔类型最简单：只有True和False两个值，没有其他变化。

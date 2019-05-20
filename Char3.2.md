@@ -1,6 +1,7 @@
 #3.2 Java程序的注释
 
 Java中的注释，不会出现在可执行文件中。因此，你可以在程序档中大肆的添加注释，Java有三种方式来添加注释：
+
 1. 第一种最常用的方法就是添加符号```//```，使用这个符号可以在本行注释符号之后添加注释。
 ```Java
 System.out.println("Hello World");  // this line will print "Hello World". 
@@ -20,3 +21,4 @@ System.out.println("Hello World");  // this line will print "Hello World".
 *@author Gary Cornell 
 */
 ```
+			

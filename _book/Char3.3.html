@@ -237,6 +237,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.9" data-path="Char3.9.html">
+            
+                <a href="Char3.9.html">
+            
+                    
+                    3.9 Big Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Char3.10.html">
+            
+                <a href="Char3.10.html">
+            
+                    
+                    3.10 Array
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -419,9 +445,13 @@
 <li>&#x4E00;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#xFF0C;unicode&#x662F;&#x4EE5;16-bit&#xFF08;4Hex&#xFF09;&#x6765;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x968F;&#x7740;&#x4E2D;&#x6587;&#xFF0C;&#x65E5;&#x6587;&#x4EE5;&#x53CA;&#x97E9;&#x6587;&#x7684;&#x52A0;&#x5165;&#xFF0C;2^16&#x4E2A;&#x5B57;&#x5DF2;&#x7ECF;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;unicode&#x4E86;&#x3002;JAVA&#x5229;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x6765;&#x89E3;&#x51B3;&#x8BE5;&#x95EE;&#x9898;&#xFF1A;<ul>
 <li>&#x9996;&#x5148;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;Code point&#xFF0C;&#x5C31;&#x50CF;&#x81EA;&#x5DF1;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&#x4E00;&#x6837;&#xFF0C;&#x5176;&#x8303;&#x56F4;&#x4E3A;&#xFF08;U+0000 to U+10FFFF&#xFF09;&#xFF0C;&#x5176;&#x4E2D;&#xFF08;U+0000 to U+FFFF&#xFF09;&#x4E3A;<strong>&#x57FA;&#x672C;&#x5B57;&#x7B26;</strong>&#xFF0C;&#x800C;&#x540E;&#x7684;&#x4E3A;<strong>&#x8865;&#x5145;&#x5B57;&#x7B26;</strong>&#xFF08;U+10000 to U+10FFFF&#xFF09;&#x3002;&#x6709;&#x4E86;&#x8EAB;&#x4EFD;&#x8BC1;&#x4E4B;&#x540E;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4F4F;&#x6240;&#xFF0C;JAVA &#x63D0;&#x4F9B;&#x4E86;17&#x4E2A;code planes&#xFF0C;&#x8FD9;&#x4E9B;planes&#x5BF9;&#x5E94;&#x5230;&#x4E86;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x8EAB;&#x4EFD;&#x8BC1;&#xFF0C;&#x50CF;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;plane&#xFF08;basic multilingual plane&#xFF09;&#x5BF9;&#x5E94;&#x7684;&#x5C31;&#x662F;&#x57FA;&#x672C;&#x5B57;&#x7B26;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x4E5F;&#x88AB;&#x53EB;&#x505A;<strong>code unit</strong>&#x3002;&#x800C;&#x540E;&#x7684;16&#x4E2A;planes&#x5BF9;&#x5E94;&#x7684;&#x5C31;&#x662F;&#x8865;&#x5145;&#x5B57;&#x7B26;&#x3002;</li>
 <li>&#x6709;&#x4E86;&#x8FD9;&#x4E9B;&#x5B9A;&#x4E49;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5982;&#x4F55;&#x6765;&#x8868;&#x793A;&#x90A3;&#x4E9B;&#x8865;&#x5145;&#x5B57;&#x7B26;&#x5462;&#xFF1F;&#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x5C31;&#x7528;&#x4E24;&#x4E2A;code unit&#x6765;&#x7EC4;&#x6210;&#x3002;&#x524D;&#x4E00;&#x4E2A;code unit&#x7684;&#x8303;&#x56F4;&#x5728;&#xFF08;0xD800&#x548C;0xDBFF&#xFF09;&#x4E4B;&#x95F4;&#xFF0C;&#x540E;&#x4E00;&#x4E2A;code unit&#x7684;&#x8303;&#x56F4;&#x5728;&#xFF08;0xDC00&#x548C;0xDFFF&#xFF09;&#x4E4B;&#x95F4;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x533A;&#x57DF;&#x88AB;&#x53EB;&#x505A;<strong>surrogates area</strong>&#x3002;</li>
-<li>&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x5177;&#x4F53;&#x7684;&#x89E3;&#x91CA;&#x53EF;&#x4EE5;<a href="https://tools.ietf.org/html/rfc2781" target="_blank">&#x8BE6;&#x89C1;</a>&#xFF0C;&#x4F5C;&#x8005;&#x63D0;&#x5230;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;char&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;String&#x7C7B;&#x578B;&#x4F1A;&#x6BD4;&#x8F83;&#x597D;&#x3002;</li>
+<li>&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x5177;&#x4F53;&#x7684;&#x89E3;&#x91CA;&#x53EF;&#x4EE5;<a href="https://tools.ietf.org/html/rfc2781" target="_blank">&#x8BE6;&#x89C1;</a>&#xFF0C;&#x4F5C;&#x8005;&#x63D0;&#x5230;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;char&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;String&#x7C7B;&#x578B;&#x4F1A;&#x6BD4;&#x8F83;&#x597D;&#x3002;  </li>
 </ul>
 </li>
+</ol>
+<h2 id="the-boolean-type&#xFF1A;">The Boolean Type&#xFF1A;</h2>
+<ol>
+<li>&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x6700;&#x7B80;&#x5355;&#xFF1A;&#x53EA;&#x6709;True&#x548C;False&#x4E24;&#x4E2A;&#x503C;&#xFF0C;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x53D8;&#x5316;&#x3002;</li>
 </ol>
 
                                 
@@ -466,7 +496,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.3 资料的类型","level":"1.3.3","depth":2,"next":{"title":"3.4 变量和常量","level":"1.3.4","depth":2,"path":"Char3.4.md","ref":"Char3.4.md","articles":[]},"previous":{"title":"3.2 注释","level":"1.3.2","depth":2,"path":"Char3.2.md","ref":"Char3.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","livereload"],"pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Char3.3.md","mtime":"2019-05-15T12:31:58.160Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-19T15:57:19.788Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.3 资料的类型","level":"1.3.3","depth":2,"next":{"title":"3.4 变量和常量","level":"1.3.4","depth":2,"path":"Char3.4.md","ref":"Char3.4.md","articles":[]},"previous":{"title":"3.2 注释","level":"1.3.2","depth":2,"path":"Char3.2.md","ref":"Char3.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","livereload"],"pluginsConfig":{"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Char3.3.md","mtime":"2019-05-20T07:33:30.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-20T10:05:51.897Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
