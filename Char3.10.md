@@ -89,7 +89,8 @@ int[][] magicSquare = {
 System.out.println(Arrays.deepToString(a));
 ```  
 1. **注意：**这里需要注意，其实Java并没有所谓的多维阵列，例如上面的```balances[][]```,其实就可以看作是不同的两组阵列，第一个阵列中存储着10个元素，每个元素存储着六个浮点数，如下图：
-![“多维矩阵”]()
+
+![多维矩阵](https://raw.githubusercontent.com/jerrysheen/JavaBook/master/img/Char3/char3.10.8.PNG)
 
 ## 3.10.8 Ragged Arrays（不规则阵列）
 承接上一部分内容，将二位矩阵拆分成这样的结构后，我们来看一看```balances[i]```是什么？其实他就是一个table中的第ith row，知道了这个以后，我们可以来做row与row之间的互换：
