@@ -10,6 +10,8 @@
 - [3.6 字符串](Char3.6.md)
 - [3.7 输入和输出](Char3.7.md)
 - [3.8 控制流程](Char3.8.md)
+- [3.9 Big Number](Char3.9.md)
+- [3.10 Array](Char3.10.md)
 
 
 
